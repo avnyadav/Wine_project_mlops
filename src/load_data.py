@@ -1,5 +1,5 @@
 import os
-from src.get_data import get_data, read_params, get_base_dir
+from get_data import get_data, read_params, get_base_dir
 
 import argparse
 

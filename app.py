@@ -39,6 +39,7 @@ def api_response(request):
     except Exception as e:
         raise e
 
+
 @app.route("/", methods=['GET', 'POST'])
 def index():
     try:

@@ -10,7 +10,7 @@ def load_and_save(config_path):
     new_cols = [col.replace(" ", "_") for col in df.columns]
     df.columns = new_cols
     raw_data_path = os.path.join(config['load_data']['raw_dataset_csv'])
-    #raw_data_path = raw_data_path
+    # raw_data_path = raw_data_path
     df.to_csv(raw_data_path, index=False)
     print(raw_data_path)
     print(new_cols)

@@ -64,12 +64,12 @@ def train_and_evaluate(config_path):
             "r2": r2
         }
         json.dump(scores, file, indent=4)
-    with open(params_file,"w") as file:
-        params={
-            "alpha":alpha,
-            "l1_ratio":l1_ratio
+    with open(params_file, "w") as file:
+        params = {
+            "alpha": alpha,
+            "l1_ratio": l1_ratio
         }
-        json.dump(params,file,indent=4)
+        json.dump(params, file, indent=4)
     os.makedirs(model_dir, exist_ok=True)
     model_dir = os.path.join(model_dir, "model.joblib")
     joblib.dump(lr, model_dir)

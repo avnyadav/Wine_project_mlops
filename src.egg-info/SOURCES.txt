@@ -1,3 +1,4 @@
+README.md
 setup.py
 src/__init__.py
 src/get_data.py
